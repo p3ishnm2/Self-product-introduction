@@ -1,5 +1,5 @@
 # Self-product-introduction
-このWebアプリを使用することで、スタッフに尋ねるなく商品や展示品の情報を得ることができます。
+このWebアプリを使用することで、スタッフに尋ねることなく商品や展示品の情報を得ることができます。
 
 By using this web application, you can get information on products and exhibits without asking the staff.
 
