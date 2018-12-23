@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<title>自己商品紹介</title>
+<h1>自己商品紹介</h1>
+<h3>Upload & Analyze new File</h3>
+{% if message %}
+<p>識別できました。</p>
+{% endif %}
+<form action="" method=post enctype=multipart/form-data>
+  <p><input type=file name=file>
+     <input type=submit value=Upload>
+</form>
+{% if message %}
+<h3>{{ message }}</h3>
+{% endif %}
+{% if desc %}
+<p>{{ desc }}</p>
+{% endif %}
+{% if audiofile %}
+<h4>音声ガイド</h4>
+<audio src="{{audiofile}}" controls preload="metadata">
+<p>音声を再生するには、audioタグをサポートしたブラウザが必要です。</p>
+</audio>
+{% endif %}
+{% if img %}
+<p><img src={{img}} height="50%" width="50%" alt={{img}}></p>
+{% endif %}
+{% endblock %}
